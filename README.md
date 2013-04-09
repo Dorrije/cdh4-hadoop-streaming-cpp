@@ -25,7 +25,7 @@ make
 * Run ``run.sh`` in the top-directory, or follow below.
 * Run the following commands:
 ```bash
-hadoop fs -put src/string_split.cc input.txt
-hadoop fs -rm -r output
+hadoop fs -put src/string_split.cc input.txt 1> /dev/null 2> /dev/null
+hadoop fs -rm -r output 1> /dev/null 2> /dev/null
 hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-*.jar -file ./src/word_count_mapper -mapper ./word_count_mapper -file ./src/word_count_reducer -reducer ./word_count_reducer -input input.txt -output output
 ```
