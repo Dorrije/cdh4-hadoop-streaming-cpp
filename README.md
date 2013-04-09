@@ -1,17 +1,23 @@
-= C++ Word Count MapReduce example with Hadoop Streaming with CDH4 =
+C++ Word Count MapReduce example with Hadoop Streaming with CDH4
+================================================================
 
-== Requisites ==
+Requisites
+----------
 * Apache Hadoop from CDH4 (http://www.cloudera.com/content/support/en/documentation/cdh4-documentation/cdh4-documentation-v4-latest.html)
 * g++, autoconf, automake, make
 
-== Quick Run ==
+Quick Run
+---------
+
 ```bash
 git clone http://github.com/QwertyManiac/cdh4-hadoop-streaming-cpp.git
 cd cdh4-hadoop-streaming-cpp/
 ./run.sh
 ```
 
-== Build ==
+Build
+-----
+
 * Run ``build.sh`` in the top-directory, or follow below.
 * Run following commands:
 ```bash
@@ -21,7 +27,9 @@ autoreconf -f -i -Wall,no-obsolete
 make
 ```
 
-== Run ==
+Run
+---
+
 * Run ``run.sh`` in the top-directory, or follow below.
 * Run the following commands:
 ```bash
