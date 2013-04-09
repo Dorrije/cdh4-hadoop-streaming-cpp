@@ -20,6 +20,7 @@ Build
 
 * Run ``build.sh`` in the top-directory, or follow below.
 * Run following commands:
+
 ```bash
 aclocal
 autoreconf -f -i -Wall,no-obsolete
@@ -32,6 +33,7 @@ Run
 
 * Run ``run.sh`` in the top-directory, or follow below.
 * Run the following commands:
+
 ```bash
 hadoop fs -put src/string_split.cc input.txt 1> /dev/null 2> /dev/null
 hadoop fs -rm -r output 1> /dev/null 2> /dev/null
